@@ -1,0 +1,13 @@
+# Local/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Generated archives/backups
+*.zip
+*.7z
+*.rar
+
+# Large simulation/build outputs can be added here later

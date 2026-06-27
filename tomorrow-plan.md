@@ -1,0 +1,47 @@
+# Tomorrow Plan
+
+Date planned: 2026-06-29
+Study duration: 2 hours
+Topic: Buck converter basics
+
+## Goal
+
+Understand what a Buck converter does, how current flows during MOS on/off states, and why the ideal relationship is `Vout = D * Vin`.
+
+## Schedule
+
+| Time | Task | Output |
+|---:|---|---|
+| 0-15 min | Understand Buck as a step-down DC/DC converter | One-sentence definition |
+| 15-40 min | Study MOS on-state and off-state current paths | Two current-path sketches |
+| 40-65 min | Learn ideal duty-cycle relation | Memorize `Vout = D * Vin` |
+| 65-90 min | Draw key waveforms | Inductor current, PWM, output voltage |
+| 90-110 min | Do duty-cycle exercises | Three calculated answers |
+| 110-120 min | Write daily log | Add entry to `daily-log.md` |
+
+## Must-Know Points
+
+1. Buck is a step-down converter.
+2. During MOS on-time, input energy goes to the inductor, capacitor, and load.
+3. During MOS off-time, the inductor continues supplying the load through a diode or synchronous MOS path.
+4. In ideal continuous conduction mode, `Vout = D * Vin`.
+5. Inductor current is a ripple waveform, not a fixed DC line.
+
+## Exercises
+
+1. `Vin = 24V`, target `Vout = 12V`: calculate duty cycle.
+2. `Vin = 48V`, target `Vout = 12V`: calculate duty cycle.
+3. `Vin = 60V`, `D = 0.2`: calculate ideal output voltage.
+
+## Send Back To Codex
+
+After studying, send:
+
+```text
+1. Buck function:
+2. Current path when MOS is on:
+3. Current path when MOS is off:
+4. Duty-cycle formula:
+5. Answers to the three exercises:
+6. Questions I still have:
+```
