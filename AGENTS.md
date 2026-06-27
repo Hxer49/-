@@ -25,6 +25,7 @@ Before creating a daily plan, reviewing progress, or answering questions about t
 6. `ASSESSMENT.md` when evaluating whether the learner has mastered a topic or topology gate
 7. `NEXT_DAY_CONTENT.md` when the learner asks to prepare tomorrow's concrete learning and assessment content
 8. `FRONTIER_TECH.md` when a module is complete enough to compare classic and frontier industry approaches
+9. `DAILY_TXT_EXPORT.md` when preparing or exporting daily study handouts
 
 ## Daily Plan Rules
 
@@ -53,6 +54,8 @@ When the learner says "整理明天的具体内容" or similar, prepare concrete
 - what Codex will check
 
 Follow `NEXT_DAY_CONTENT.md`.
+
+Also export the same concrete content as a standalone `.txt` file under the configured daily export directory. Follow `DAILY_TXT_EXPORT.md`.
 
 ## Frontier Technology Rule
 

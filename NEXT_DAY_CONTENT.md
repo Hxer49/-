@@ -7,10 +7,14 @@ Use this protocol whenever the learner says phrases such as:
 - "明天具体学什么"
 - "出明天学习计划"
 - "整理明天要学的和考核的内容"
+- "mingtian juti neirong"
+- "prepare tomorrow content"
 
 ## Purpose
 
 The response should not be only a rough plan. It must prepare the learner for the next study session with concrete learning content and assessment items.
+
+Also export the same content as a standalone TXT file when the local export directory is available. See `DAILY_TXT_EXPORT.md`.
 
 ## Required Output Sections
 
