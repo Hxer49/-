@@ -52,6 +52,14 @@ Status values:
 
 | Skill Area | Status | Notes |
 |---|---|---|
+| Analog basics: voltage/current/R/C | Not started | Needed immediately |
+| RC filters and time constants | Not started | ADC filtering and compensation foundation |
+| Diodes and rectification | Not started | Power paths and clamps |
+| MOSFET basics | Not started | Switch behavior, body diode, gate charge later |
+| Op-amp basics | Not started | Sensing and conditioning |
+| Comparator basics | Not started | Fast protection and hysteresis |
+| References and thresholds | Not started | Protection and ADC scaling |
+| Noise, grounding, and layout for analog signals | Not started | Sampling reliability |
 | Power topology current paths | Not started | Start with Buck |
 | Magnetics: inductor/transformer | Not started | Build gradually |
 | Semiconductor stress/loss | Not started | MOSFET/diode first |
@@ -84,10 +92,12 @@ Status values:
 ## Known Weaknesses To Revisit Often
 
 - Power-stage topology intuition.
+- Analog circuit foundation.
 - Hardware sizing for power stages.
 - Magnetics.
 - Device stress, losses, thermal design.
 - PCB layout for high-current/high-dvdt loops.
+- ADC front-end and analog signal integrity.
 - Control-loop math and tuning.
 - TI C2000/DSP specifics.
 - Power debugging and safety.
@@ -120,6 +130,7 @@ For each topology:
 
 - Principle can move to working depth after the learner can draw switching states, current paths, key waveforms, and explain CCM/DCM or equivalent operating modes.
 - Hardware can move to working depth after the learner can size or justify main components, identify device stress, sensing, protection, thermal, and layout priorities.
+- Analog support can move to working depth after the learner can explain resistor dividers, RC filters, op-amp/comparator roles, thresholds, noise/grounding, and how they affect ADC/protection behavior.
 - Simulation can move to working depth after the learner can build or explain a model and interpret normal/abnormal waveforms.
 - Software/control can move to working depth after the learner can explain PWM/sampling/control/protection/state-machine strategy.
 - Debug can move to working depth after the learner can define safe bring-up steps, measurement points, expected waveforms, and likely causes of abnormal waveforms.

@@ -9,7 +9,9 @@ This directory is a long-term learning archive for digital power software engine
 - Long-term goal: become proficient and eventually expert-level in power electronics and digital power full-stack engineering.
 - Target depth: master major power topologies from both hardware and software perspectives.
 - Existing strengths: STM32, upper-computer development, CPLD, control-board design, communication ports and common protocols except CAN.
+- Current constraint: the learner has little analog circuit foundation.
 - Main gaps: topology hardware design, digital control, TI C2000/DSP, simulation, CAN, and real power-stage debugging.
+- Analog electronics must be taught progressively throughout the plan, especially where it affects sensing, filtering, op-amps, comparators, protection, compensation, grounding, and noise.
 
 ## Required File Reading
 
@@ -44,6 +46,7 @@ For each major topology, guide the learner through these gates:
 3. Simulation: open-loop behavior, closed-loop behavior when applicable, expected and abnormal waveforms.
 4. Software/control: PWM strategy, ADC sampling, loop control, soft start, protection, state machine.
 5. Debug: measurement points, oscilloscope interpretation, common faults, safe bring-up.
+6. Analog support: filters, op-amps, comparators, references, sampling front ends, protection thresholds, noise, grounding.
 
 Do not treat a topology as complete only because the formula is known. Also do not require full product-level mastery before moving on; revisit deeper hardware and debug issues in later project phases.
 

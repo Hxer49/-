@@ -16,6 +16,7 @@
 - Has designed control boards.
 - Familiar with communication ports except CAN.
 - Familiar with common communication protocols.
+- Has little analog circuit foundation. Analog electronics must be built into the long-term plan from the beginning.
 
 ## Target Roles
 
@@ -28,6 +29,7 @@
 ## Main Skill Gaps
 
 - Power electronics topology knowledge and design: Buck, Boost, Buck-Boost, synchronous Buck/Boost, bidirectional DC/DC, flyback, forward, push-pull, half bridge, full bridge, phase-shift full bridge, LLC, PFC, rectifier, inverter.
+- Analog circuit foundation: resistor/capacitor behavior, RC filters, diodes, BJTs/MOSFET small-signal basics, op-amps, comparators, feedback, compensation, noise, grounding, sampling front ends.
 - Hardware design for each topology: device selection, magnetic components, capacitor selection, drive circuit, sampling circuit, protection circuit, thermal design, layout, efficiency, EMI awareness.
 - Digital power control: PWM/ADC timing, voltage loop, current loop, PI/PID, soft start, protection logic, loop stability.
 - TI C2000/DSP ecosystem: ePWM, ADC trigger, CMPSS, Trip Zone, CLA, HRPWM, CCS.
@@ -42,6 +44,7 @@ Expert-level does not mean only knowing theory. It means being able to:
 - Explain common power topologies, current paths, key waveforms, and control goals.
 - For each major topology, explain the operating modes, stress, key waveforms, failure modes, and practical design tradeoffs.
 - Design the hardware around each topology at a reasonable engineering level: switches, magnetics, capacitors, drivers, sensing, protection, thermal path, and PCB layout priorities.
+- Design and debug the analog support circuits around power stages: voltage/current sensing, filters, op-amp conditioning, comparators, references, protection thresholds, compensation networks, and noise/grounding issues.
 - Build and tune closed-loop digital control for representative DC/DC and DC/AC/AC/DC systems.
 - Use simulation to validate topology behavior, hardware sizing, and control-loop response.
 - Implement robust embedded software on STM32 and TI C2000/DSP.
@@ -59,6 +62,7 @@ For every major topology, mastery means passing these gates:
 3. Simulation gate: build an open-loop and, when applicable, closed-loop simulation and explain the waveforms.
 4. Software/control gate: describe or implement PWM strategy, sampling strategy, control loop, soft start, protection, and state machine.
 5. Debug gate: know what to measure, expected oscilloscope waveforms, common abnormal waveforms, and likely causes.
+6. Analog support gate, when relevant: explain sensing, filtering, op-amp/comparator behavior, reference/threshold design, noise path, and grounding/layout effect.
 
 Important: Do not require full product-level depth before moving to the next topology. First reach engineering working depth, then revisit product-level details through projects and debugging cases.
 

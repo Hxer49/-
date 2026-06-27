@@ -7,6 +7,7 @@ This roadmap assumes usually about 2 hours of study per day, with flexible progr
 The learner already has STM32, PC tool, CPLD, control-board, and communication experience. The plan therefore focuses on:
 
 - Power topology principles.
+- Analog electronics foundation.
 - Hardware design and component selection.
 - Magnetic components and power-stage behavior.
 - Digital control software.
@@ -22,6 +23,7 @@ For each major topology, learning is tracked through five gates:
 |---|---|
 | Principle | Draw topology, current paths, switching states, key waveforms, operating modes |
 | Hardware | Choose or calculate switches, magnetics, capacitors, drivers, sensing, protection, thermal, layout |
+| Analog support | Understand sensing, filtering, op-amps, comparators, references, compensation, noise, grounding |
 | Simulation | Build open-loop and closed-loop simulation when applicable; explain normal and abnormal waveforms |
 | Software/control | PWM strategy, ADC sampling, loop control, soft start, protection, state machine |
 | Debug | Measurement points, oscilloscope interpretation, safe bring-up, common faults |
@@ -32,11 +34,11 @@ A topology can move forward after engineering working depth. Product-level maste
 
 | Period | Main Goal | Expected Capability |
 |---|---|---|
-| Month 1 | Buck foundation | Understand Buck principle, hardware blocks, key waveforms, basic sizing |
-| Month 2 | Buck control and debug foundation | PWM/ADC/PI/soft start/protection around Buck |
+| Month 1 | Buck + analog entry foundation | Understand Buck principle plus resistor/capacitor/diode/RC basics |
+| Month 2 | Buck control, sensing, and protection foundation | PWM/ADC/PI plus voltage/current sensing, filters, comparators |
 | Month 3 | Boost and Buck-Boost | Compare energy paths, stress, control differences |
-| Month 4 | Non-isolated DC/DC design practice | Simulate and size Buck/Boost/Buck-Boost; start hardware design notes |
-| Months 5-6 | TI C2000/DSP and digital control platform | Build reusable PWM/ADC/control/protection software base |
+| Month 4 | Non-isolated DC/DC and analog front ends | Simulate and size Buck/Boost/Buck-Boost; design sampling/filter notes |
+| Months 5-6 | TI C2000/DSP and analog-aware digital control platform | Build reusable PWM/ADC/control/protection base with analog assumptions |
 | Months 7-8 | Real low-voltage Buck/Boost project | Bring up, measure, close loop, debug safely |
 | Months 9-10 | Isolated DC/DC foundation | Flyback, forward, push-pull, half bridge, full bridge |
 | Months 11-12 | Resonant and bridge topologies | LLC and phase-shift full bridge at principle/hardware/control level |
@@ -51,11 +53,14 @@ A topology can move forward after engineering working depth. Product-level maste
 
 Focus:
 
+- Analog entry: voltage, current, resistor divider, capacitor charging, RC time constant, diode behavior.
 - Buck topology and switching states.
 - CCM/DCM.
 - Inductor ripple and capacitor ripple.
 - MOSFET, diode/synchronous MOS, driver, bootstrap basics.
 - Voltage/current sensing.
+- RC filter before ADC.
+- Op-amp and comparator awareness for sensing/protection.
 - Layout priorities: hot loop, power ground, signal ground, sampling path.
 - PWM, dead time, ADC synchronization.
 - PI voltage loop, current limit, soft start, OVP/UVP/OCP/SCP.
@@ -65,6 +70,7 @@ Outputs:
 
 - Buck principle notes.
 - Buck hardware block diagram.
+- Analog support notes for Buck voltage sensing and current sensing.
 - Basic sizing spreadsheet or notes.
 - Buck open-loop simulation.
 - Buck voltage-loop pseudocode.
@@ -82,6 +88,7 @@ Topologies:
 
 Focus:
 
+- Analog support for non-isolated DC/DC: voltage dividers, current-sense resistor, RC anti-alias filters, op-amp gain, comparator thresholds.
 - Energy storage and transfer paths.
 - Switch and diode/MOS voltage/current stress.
 - Duty-cycle relationships and limits.
@@ -95,6 +102,7 @@ Outputs:
 - Topology comparison table.
 - Boost and Buck-Boost simulations.
 - Hardware sizing examples.
+- Sampling and protection front-end examples.
 - Control strategy comparison notes.
 
 ## Phase 3: Months 5-6 - Digital Control Platform
@@ -104,8 +112,10 @@ Focus:
 - TI C2000 and STM32 comparison for digital power.
 - ePWM/complementary PWM/dead-band.
 - ADC triggered by PWM.
+- ADC input constraints, source impedance, sampling capacitor awareness, RC filter tradeoffs.
 - Control-loop ISR.
 - CMPSS and Trip Zone.
+- Analog comparator versus MCU ADC protection path.
 - CLA/HRPWM awareness.
 - Fixed-point/float control considerations.
 - CAN/SCI telemetry.
@@ -269,6 +279,7 @@ Outputs:
 
 Focus:
 
+- Analog electronics consolidation: op-amp limitations, comparator hysteresis, references, biasing, noise, bandwidth, phase shift.
 - Magnetics: inductors, transformers, saturation, core loss, copper loss.
 - Semiconductor loss: conduction loss, switching loss, diode recovery.
 - Gate drive and dead time.
