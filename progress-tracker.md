@@ -25,28 +25,28 @@ Status values:
 - Project depth
 - Review later
 
-| Topology/System | Principle | Hardware | Simulation | Software/control | Debug | Notes |
-|---|---|---|---|---|---|---|
-| Buck | Not started | Not started | Not started | Not started | Not started | First master template |
-| Boost | Not started | Not started | Not started | Not started | Not started | Planned after Buck foundation |
-| Buck-Boost | Not started | Not started | Not started | Not started | Not started | Non-isolated family |
-| Synchronous Buck/Boost | Not started | Not started | Not started | Not started | Not started | Dead time and driver focus |
-| Bidirectional Buck-Boost | Not started | Not started | Not started | Not started | Not started | Later vehicle/system topic |
-| Flyback | Not started | Not started | Not started | Not started | Not started | Isolated foundation |
-| Forward | Not started | Not started | Not started | Not started | Not started | Isolated foundation |
-| Push-pull | Not started | Not started | Not started | Not started | Not started | Isolated foundation |
-| Half bridge DC/DC | Not started | Not started | Not started | Not started | Not started | Bridge family |
-| Full bridge DC/DC | Not started | Not started | Not started | Not started | Not started | Bridge family |
-| Phase-shift full bridge | Not started | Not started | Not started | Not started | Not started | Advanced bridge |
-| LLC | Not started | Not started | Not started | Not started | Not started | Resonant converter |
-| Rectifier AC/DC | Not started | Not started | Not started | Not started | Not started | AC/DC foundation |
-| Boost PFC | Not started | Not started | Not started | Not started | Not started | AC/DC control focus |
-| Totem-pole PFC | Not started | Not started | Not started | Not started | Not started | Awareness first |
-| Half-bridge inverter | Not started | Not started | Not started | Not started | Not started | DC/AC foundation |
-| Full-bridge inverter | Not started | Not started | Not started | Not started | Not started | DC/AC foundation |
-| Three-phase inverter | Not started | Not started | Not started | Not started | Not started | Overview first |
-| Vehicle DC/DC | Not started | Not started | Not started | Not started | Not started | System integration |
-| OBC system | Not started | Not started | Not started | Not started | Not started | System integration |
+| Topology/System | Principle | Hardware | Simulation | Software/control | Debug | Frontier awareness | Notes |
+|---|---|---|---|---|---|---|---|
+| Buck | Not started | Not started | Not started | Not started | Not started | Not started | First master template |
+| Boost | Not started | Not started | Not started | Not started | Not started | Not started | Planned after Buck foundation |
+| Buck-Boost | Not started | Not started | Not started | Not started | Not started | Not started | Non-isolated family |
+| Synchronous Buck/Boost | Not started | Not started | Not started | Not started | Not started | Not started | Dead time and driver focus |
+| Bidirectional Buck-Boost | Not started | Not started | Not started | Not started | Not started | Not started | Later vehicle/system topic |
+| Flyback | Not started | Not started | Not started | Not started | Not started | Not started | Isolated foundation |
+| Forward | Not started | Not started | Not started | Not started | Not started | Not started | Isolated foundation |
+| Push-pull | Not started | Not started | Not started | Not started | Not started | Not started | Isolated foundation |
+| Half bridge DC/DC | Not started | Not started | Not started | Not started | Not started | Not started | Bridge family |
+| Full bridge DC/DC | Not started | Not started | Not started | Not started | Not started | Not started | Bridge family |
+| Phase-shift full bridge | Not started | Not started | Not started | Not started | Not started | Not started | Advanced bridge |
+| LLC | Not started | Not started | Not started | Not started | Not started | Not started | Resonant converter |
+| Rectifier AC/DC | Not started | Not started | Not started | Not started | Not started | Not started | AC/DC foundation |
+| Boost PFC | Not started | Not started | Not started | Not started | Not started | Not started | AC/DC control focus |
+| Totem-pole PFC | Not started | Not started | Not started | Not started | Not started | Not started | Awareness first |
+| Half-bridge inverter | Not started | Not started | Not started | Not started | Not started | Not started | DC/AC foundation |
+| Full-bridge inverter | Not started | Not started | Not started | Not started | Not started | Not started | DC/AC foundation |
+| Three-phase inverter | Not started | Not started | Not started | Not started | Not started | Not started | Overview first |
+| Vehicle DC/DC | Not started | Not started | Not started | Not started | Not started | Not started | System integration |
+| OBC system | Not started | Not started | Not started | Not started | Not started | Not started | System integration |
 
 ## Cross-Cutting Skill Checklist
 
@@ -88,6 +88,13 @@ Status values:
 | BOM and component selection workflow | Not started | Hardware engineering skill |
 | Derating and reliability basics | Not started | Hardware/product depth |
 | Design-review documentation | Not started | Senior-level communication |
+| GaN fundamentals | Not started | Add after Buck/Buck-Boost foundation |
+| SiC fundamentals | Not started | Add around PFC/inverter/high-voltage topics |
+| Advanced packaging and parasitics | Not started | Needed for high-frequency/high-density design |
+| Planar magnetics | Not started | Add around LLC/PSFB/high-frequency stages |
+| Totem-pole PFC frontier | Not started | Add after classic PFC |
+| Data-center 48V power architecture | Not started | Add after non-isolated DC/DC family |
+| Vehicle 800V power architecture | Not started | Add around OBC/inverter/SiC topics |
 
 ## Known Strengths
 
@@ -113,6 +120,7 @@ Status values:
 - Datasheet reading and requirements decomposition.
 - Safety workflow and instrument setup.
 - Test-plan discipline.
+- Industry frontier awareness: GaN, SiC, high-frequency power, advanced packaging, planar magnetics, modern PFC/inverter/bidirectional systems.
 
 ## Next Planned Topic
 
@@ -145,6 +153,7 @@ For each topology:
 - Simulation can move to working depth after the learner can build or explain a model and interpret normal/abnormal waveforms.
 - Software/control can move to working depth after the learner can explain PWM/sampling/control/protection/state-machine strategy.
 - Debug can move to working depth after the learner can define safe bring-up steps, measurement points, expected waveforms, and likely causes of abnormal waveforms.
+- Frontier awareness can move to working depth after the learner can compare the classic approach with a modern industry approach, explain why industry uses it, and identify the new design problems it introduces.
 
 ## Assessment Evidence Log
 

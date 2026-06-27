@@ -37,6 +37,7 @@
 - CAN communication and, later, CANopen/J1939/UDS basics if vehicle power roles require it.
 - Power-stage debugging: oscilloscope waveforms, electronic load testing, overcurrent/overvoltage behavior, noise, dead time, device protection.
 - Engineering workflow: reading datasheets/application notes, deriving requirements, creating design documents, BOM awareness, derating, reliability, safety, test plans, and version-controlled project records.
+- Industry frontier awareness: GaN, SiC, high-frequency conversion, advanced packaging, planar magnetics, totem-pole PFC, bidirectional converters, vehicle power, data-center power, and high-power-density design.
 
 ## Long-Term Definition Of "Expert"
 
@@ -55,6 +56,7 @@ Expert-level does not mean only knowing theory. It means being able to:
 - Write clear project documentation and explain the work in interviews.
 - Convert product requirements into electrical/software requirements, test plans, fault tables, and design-review material.
 - Work safely with power hardware, including current limiting, isolation awareness, discharge checks, and instrument setup.
+- Explain how modern frontier solutions build on traditional designs, including why GaN/SiC/high-frequency designs improve performance and what new design problems they introduce.
 
 ## Topology Mastery Standard
 
@@ -85,6 +87,7 @@ When asked for tomorrow's plan:
 - Avoid overloading the day with too many concepts.
 - Include 3-5 small exercises or checkpoints.
 - End with exactly what the learner should send back after studying.
+- After each module reaches a foundation level, add a short frontier-technology comparison using `FRONTIER_TECH.md`.
 
 ## Long-Term Continuity Rules
 

@@ -15,10 +15,11 @@ The learner already has STM32, PC tool, CPLD, control-board, and communication e
 - Real hardware bring-up and debugging.
 - Product-level architecture and documentation.
 - Engineering workflow: datasheets, requirements, BOM, derating, reliability, safety, test plans, design reviews.
+- Industry frontier awareness: GaN, SiC, high-frequency conversion, advanced packaging, planar magnetics, totem-pole PFC, bidirectional converters, vehicle/data-center power trends.
 
 ## Topology Mastery Gates
 
-For each major topology, learning is tracked through five gates:
+For each major topology, learning is tracked through these gates:
 
 | Gate | Meaning |
 |---|---|
@@ -28,6 +29,7 @@ For each major topology, learning is tracked through five gates:
 | Simulation | Build open-loop and closed-loop simulation when applicable; explain normal and abnormal waveforms |
 | Software/control | PWM strategy, ADC sampling, loop control, soft start, protection, state machine |
 | Debug | Measurement points, oscilloscope interpretation, safe bring-up, common faults |
+| Frontier awareness | Compare classic implementation with modern industry approaches such as GaN/SiC/high-frequency designs |
 
 A topology can move forward after engineering working depth. Product-level mastery is revisited later through projects and debug cases.
 
@@ -66,6 +68,7 @@ Focus:
 - PWM, dead time, ADC synchronization.
 - PI voltage loop, current limit, soft start, OVP/UVP/OCP/SCP.
 - Open-loop and closed-loop Buck simulation.
+- Frontier preview after foundation: silicon MOSFET Buck versus high-frequency GaN Buck.
 
 Outputs:
 
@@ -105,6 +108,7 @@ Outputs:
 - Hardware sizing examples.
 - Sampling and protection front-end examples.
 - Control strategy comparison notes.
+- Classic versus GaN/SiC non-isolated DC/DC comparison.
 
 ## Phase 3: Months 5-6 - Digital Control Platform
 
@@ -120,6 +124,7 @@ Focus:
 - CLA/HRPWM awareness.
 - Fixed-point/float control considerations.
 - CAN/SCI telemetry.
+- Digital control trends: faster control loops, model-based design, auto-code generation awareness.
 
 Outputs:
 
@@ -195,6 +200,7 @@ Focus:
 - Phase-shift control and duty/effective duty.
 - Light-load behavior and protection.
 - Practical debugging waveforms.
+- Frontier comparison: high-frequency LLC/PSFB, GaN/SiC switches, planar magnetics.
 
 Outputs:
 
@@ -220,6 +226,7 @@ Focus:
 - Feedforward and input-voltage sampling.
 - Inrush, bus OVP, brown-in/brown-out, current protection.
 - Safety and isolation awareness.
+- Frontier comparison: bridge Boost PFC versus totem-pole PFC using GaN/SiC.
 
 Outputs:
 
@@ -245,6 +252,7 @@ Focus:
 - Phase current sampling.
 - Overcurrent/desaturation protection awareness.
 - Output filter basics.
+- Frontier comparison: silicon/IGBT inverter versus SiC inverter.
 
 Outputs:
 
@@ -270,6 +278,7 @@ Focus:
 - CAN communication and diagnostics.
 - Fault recovery and derating.
 - System-level state machine.
+- Frontier comparison: CLLC, bidirectional OBC, 800V vehicle platforms, energy storage converters.
 
 Outputs:
 
@@ -291,6 +300,7 @@ Focus:
 - Thermal path and derating.
 - PCB layout for power converters.
 - EMI/EMC awareness.
+- Wide-bandgap layout and EMI challenges.
 - Datasheet reading and parameter extraction.
 - BOM awareness and second-source thinking.
 - Derating and reliability basics.
@@ -362,3 +372,4 @@ The 24-month plan is enough to build a strong full-stack foundation. True master
 - Repeated design reviews.
 - Safety and compliance standards awareness.
 - Supplier component changes and reliability cases.
+- Frontier-technology roadmap reviews.

@@ -5,6 +5,7 @@ Study duration: 2 hours by default
 Topic: Buck converter basics, with hardware/software/analog support perspective
 Current gate: Buck principle gate, with analog entry support
 Study mode: The learner finds learning resources independently, asks Codex when stuck, then submits notes/artifacts for assessment.
+Frontier note: No GaN/SiC assessment tomorrow. After the classic Buck foundation is acceptable, Codex will add a silicon MOSFET Buck versus GaN Buck comparison.
 
 ## Learning Objectives
 

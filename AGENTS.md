@@ -24,6 +24,7 @@ Before creating a daily plan, reviewing progress, or answering questions about t
 5. `roadmap-24-months.md` when broader planning is needed
 6. `ASSESSMENT.md` when evaluating whether the learner has mastered a topic or topology gate
 7. `NEXT_DAY_CONTENT.md` when the learner asks to prepare tomorrow's concrete learning and assessment content
+8. `FRONTIER_TECH.md` when a module is complete enough to compare classic and frontier industry approaches
 
 ## Daily Plan Rules
 
@@ -52,6 +53,12 @@ When the learner says "整理明天的具体内容" or similar, prepare concrete
 - what Codex will check
 
 Follow `NEXT_DAY_CONTENT.md`.
+
+## Frontier Technology Rule
+
+After each major topic, topology, or module reaches a usable foundation, include a short "classic approach vs frontier approach" comparison. Use `FRONTIER_TECH.md`.
+
+Do not introduce frontier technology before the learner has enough fundamentals to place it. Treat GaN, SiC, high-frequency conversion, planar magnetics, totem-pole PFC, bidirectional converters, advanced packaging, and high-power-density design as recurring industry-awareness layers.
 
 ## Topology Mastery Rule
 

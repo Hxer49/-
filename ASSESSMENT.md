@@ -41,6 +41,7 @@ When the learner submits notes, waveforms, code, simulation results, or asks whe
    - Simulation
    - Software/control
    - Debug
+   - Frontier awareness, after the classic foundation is strong enough
 2. Review the submitted evidence.
 3. Mark what is correct, incomplete, unclear, or wrong.
 4. Ask 2-5 targeted questions when the evidence is insufficient or when understanding needs verification.
@@ -114,6 +115,16 @@ Pass to working depth when the learner can:
 - Predict expected waveforms.
 - Interpret abnormal waveforms.
 - Suggest likely causes and next measurements.
+
+### Frontier Awareness Gate
+
+Pass to working depth when the learner can:
+
+- Compare a classic implementation with a modern frontier implementation.
+- Explain why industry uses the frontier approach.
+- Identify new design challenges introduced by the frontier approach.
+- Explain which fundamentals remain the same.
+- Name what should be learned now and what should be postponed.
 
 ## Questioning Strategy
 
