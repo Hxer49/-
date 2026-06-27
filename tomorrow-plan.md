@@ -37,7 +37,7 @@ Understand what a Buck converter does, how current flows during MOS on/off state
 
 ## Send Back To Codex
 
-After studying, send:
+After studying, send your notes and any artifact you created. Codex will evaluate whether the Buck principle gate is still `Learning` or can move toward `Working depth`.
 
 ```text
 1. Buck function:
@@ -46,5 +46,11 @@ After studying, send:
 4. Duty-cycle formula:
 5. Main hardware blocks:
 6. Answers to the three exercises:
-7. Questions I still have:
+7. Sketch/photo/simulation/code if available:
+8. Questions I still have:
 ```
+
+Assessment rule:
+
+- Do not mark yourself as passed.
+- Codex will review the evidence, ask follow-up questions if needed, then decide the current level.

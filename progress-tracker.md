@@ -112,6 +112,7 @@ Use these rules after reviewing each daily note:
 - Slow down: The learner confuses current paths, formulas, control concepts, waveform meaning, or hardware stress.
 - Add challenge: The learner completes more than planned or asks deeper questions; add a harder exercise or related next concept.
 - Update this tracker when a topic or mastery gate is actually completed, even if it happens earlier or later than the roadmap.
+- Do not update a gate to working depth or project depth based only on self-report. Require evidence and, when needed, follow-up questions.
 
 ## Mastery Gate Update Rules
 
@@ -122,3 +123,9 @@ For each topology:
 - Simulation can move to working depth after the learner can build or explain a model and interpret normal/abnormal waveforms.
 - Software/control can move to working depth after the learner can explain PWM/sampling/control/protection/state-machine strategy.
 - Debug can move to working depth after the learner can define safe bring-up steps, measurement points, expected waveforms, and likely causes of abnormal waveforms.
+
+## Assessment Evidence Log
+
+| Date | Topic/Gate | Evidence Reviewed | Codex Assessment | Next Action |
+|---|---|---|---|---|
+| 2026-06-28 | Assessment policy | User requested Codex-led evidence-based evaluation | Policy added | Use for all future mastery decisions |

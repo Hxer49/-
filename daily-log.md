@@ -34,6 +34,20 @@ Topology mastery evidence:
 4. Software/control:
 5. Debug:
 
+Submitted artifacts:
+1. Notes:
+2. Waveforms:
+3. Code:
+4. Simulation:
+5. Calculations:
+
+Codex assessment:
+1. Gate assessed:
+2. Evidence reviewed:
+3. Current level:
+4. Gaps:
+5. Follow-up questions asked:
+
 Questions for Codex:
 1.
 

@@ -20,6 +20,7 @@ Before creating a daily plan, reviewing progress, or answering questions about t
 3. `daily-log.md`
 4. `tomorrow-plan.md`
 5. `roadmap-24-months.md` when broader planning is needed
+6. `ASSESSMENT.md` when evaluating whether the learner has mastered a topic or topology gate
 
 ## Daily Plan Rules
 
@@ -45,6 +46,21 @@ For each major topology, guide the learner through these gates:
 5. Debug: measurement points, oscilloscope interpretation, common faults, safe bring-up.
 
 Do not treat a topology as complete only because the formula is known. Also do not require full product-level mastery before moving on; revisit deeper hardware and debug issues in later project phases.
+
+## Assessment Rule
+
+The learner does not pass a topic only by self-reporting that it is understood. Evaluate mastery from evidence:
+
+- Notes and explanations.
+- Hand-drawn diagrams or photos.
+- Oscilloscope waveforms.
+- Simulation results.
+- Code.
+- Calculations.
+- Debug records.
+- Follow-up questions and answers.
+
+When evidence is incomplete, ask targeted engineering questions before marking a gate complete. Assume the learner answers questions without outside assistance unless there is evidence otherwise. Use `ASSESSMENT.md` as the detailed policy.
 
 ## Teaching Style
 
