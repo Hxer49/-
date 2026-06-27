@@ -80,6 +80,14 @@ Status values:
 | TI C2000 Trip Zone/CMPSS | Not started | Hardware-fast protection |
 | CAN | Not started | Product/system integration |
 | Real hardware power debugging | Not started | Low-voltage first |
+| Instrument skills: oscilloscope/probes/load/supply | Not started | Needed before hardware bring-up |
+| Safety workflow | Not started | Current limit, discharge, isolation awareness |
+| Datasheet/application-note reading | Not started | Needed for real design |
+| Requirements decomposition | Not started | Product engineering skill |
+| Test plan and test report writing | Not started | Verification discipline |
+| BOM and component selection workflow | Not started | Hardware engineering skill |
+| Derating and reliability basics | Not started | Hardware/product depth |
+| Design-review documentation | Not started | Senior-level communication |
 
 ## Known Strengths
 
@@ -102,6 +110,9 @@ Status values:
 - TI C2000/DSP specifics.
 - Power debugging and safety.
 - CAN in industrial/vehicle power products.
+- Datasheet reading and requirements decomposition.
+- Safety workflow and instrument setup.
+- Test-plan discipline.
 
 ## Next Planned Topic
 

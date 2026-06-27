@@ -14,6 +14,7 @@ The learner already has STM32, PC tool, CPLD, control-board, and communication e
 - Simulation.
 - Real hardware bring-up and debugging.
 - Product-level architecture and documentation.
+- Engineering workflow: datasheets, requirements, BOM, derating, reliability, safety, test plans, design reviews.
 
 ## Topology Mastery Gates
 
@@ -46,7 +47,7 @@ A topology can move forward after engineering working depth. Product-level maste
 | Months 15-16 | DC/AC inverter | Half/full bridge inverter, SPWM/SVPWM basics, sampling, protection |
 | Months 17-18 | Bidirectional and vehicle power overview | Bidirectional Buck-Boost, vehicle DC/DC, OBC system view |
 | Months 19-20 | Hardware depth | Magnetics, losses, thermal, layout, sensing, protection coordination |
-| Months 21-22 | Software architecture depth | Platform drivers, fault manager, calibration, CAN, logging, parameter management |
+| Months 21-22 | Product engineering depth | Software architecture plus requirements, test plans, datasheets, BOM, derating, safety |
 | Months 23-24 | Integrated portfolio and interview readiness | Document topology library, projects, debug cases, design reviews |
 
 ## Phase 1: Months 1-2 - Buck As The Master Template
@@ -132,6 +133,7 @@ Outputs:
 
 Focus:
 
+- Safety setup: current limit, fusing awareness, discharge path, isolated measurement awareness, one-change-at-a-time debug discipline.
 - Safe low-voltage Buck and, if possible, Boost hardware.
 - Current-limited power-up.
 - Open-loop validation.
@@ -146,6 +148,7 @@ Outputs:
 - Optional Boost demo.
 - Debug notes and waveform screenshots.
 - Fault table.
+- Test plan and test report.
 - Short project report.
 
 ## Phase 5: Months 9-10 - Isolated DC/DC Foundation
@@ -288,18 +291,25 @@ Focus:
 - Thermal path and derating.
 - PCB layout for power converters.
 - EMI/EMC awareness.
+- Datasheet reading and parameter extraction.
+- BOM awareness and second-source thinking.
+- Derating and reliability basics.
 
 Outputs:
 
 - Hardware design checklist.
 - Loss calculation examples.
 - Layout review checklist.
+- Datasheet parameter checklist.
 - Debug case notes.
 
-## Phase 11: Months 21-22 - Software Architecture Depth
+## Phase 11: Months 21-22 - Product Engineering And Software Architecture Depth
 
 Focus:
 
+- Requirement decomposition: input/output range, load, ripple, transient, protection, thermal, communication, safety.
+- Test plan design: startup, load step, input step, protection, thermal, communication, fault recovery.
+- Design-review writing: assumptions, risks, calculations, waveforms, verification evidence.
 - Platform drivers.
 - Control-loop abstraction.
 - Fault manager.
@@ -309,9 +319,13 @@ Focus:
 - CAN/CANopen/J1939/UDS awareness depending on target role.
 - Logging and diagnostic codes.
 - Bootloader/upgrade awareness.
+- Version control and release notes for learning projects.
 
 Outputs:
 
+- Requirement table.
+- Test plan and test report template.
+- Design-review document.
 - Product-like digital power software framework.
 - Fault table.
 - Parameter table.
@@ -346,3 +360,5 @@ The 24-month plan is enough to build a strong full-stack foundation. True master
 - EMI/thermal/compliance work.
 - Reading reference designs and application notes.
 - Repeated design reviews.
+- Safety and compliance standards awareness.
+- Supplier component changes and reliability cases.

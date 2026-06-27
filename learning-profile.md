@@ -36,6 +36,7 @@
 - Simulation: PSIM, PLECS, MATLAB/Simulink.
 - CAN communication and, later, CANopen/J1939/UDS basics if vehicle power roles require it.
 - Power-stage debugging: oscilloscope waveforms, electronic load testing, overcurrent/overvoltage behavior, noise, dead time, device protection.
+- Engineering workflow: reading datasheets/application notes, deriving requirements, creating design documents, BOM awareness, derating, reliability, safety, test plans, and version-controlled project records.
 
 ## Long-Term Definition Of "Expert"
 
@@ -52,6 +53,8 @@ Expert-level does not mean only knowing theory. It means being able to:
 - Debug real hardware safely with power instruments.
 - Analyze unstable output, overshoot, protection trips, sampling noise, PWM timing problems, and hardware/software interaction problems.
 - Write clear project documentation and explain the work in interviews.
+- Convert product requirements into electrical/software requirements, test plans, fault tables, and design-review material.
+- Work safely with power hardware, including current limiting, isolation awareness, discharge checks, and instrument setup.
 
 ## Topology Mastery Standard
 
