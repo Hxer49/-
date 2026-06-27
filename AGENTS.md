@@ -6,9 +6,10 @@ This directory is a long-term learning archive for digital power software engine
 
 - The learner studies about 2 hours per day.
 - The learner may study more or less on holidays or busy days; adjust plans dynamically.
-- Long-term goal: become proficient and eventually expert-level in digital power software engineering.
+- Long-term goal: become proficient and eventually expert-level in power electronics and digital power full-stack engineering.
+- Target depth: master major power topologies from both hardware and software perspectives.
 - Existing strengths: STM32, upper-computer development, CPLD, control-board design, communication ports and common protocols except CAN.
-- Main gaps: power electronics, digital control, TI C2000/DSP, simulation, CAN, and real power-stage debugging.
+- Main gaps: topology hardware design, digital control, TI C2000/DSP, simulation, CAN, and real power-stage debugging.
 
 ## Required File Reading
 
@@ -32,6 +33,18 @@ Before creating a daily plan, reviewing progress, or answering questions about t
 - Use the learner's last log and confidence score to decide whether to continue, review, or advance.
 - Do not skip fundamentals too quickly.
 - Track progress by updating `tomorrow-plan.md` and, when appropriate, `progress-tracker.md`.
+
+## Topology Mastery Rule
+
+For each major topology, guide the learner through these gates:
+
+1. Principle: topology, current paths, switching states, key waveforms.
+2. Hardware: device stress, magnetics, capacitors, drivers, sensing, protection, thermal, PCB layout.
+3. Simulation: open-loop behavior, closed-loop behavior when applicable, expected and abnormal waveforms.
+4. Software/control: PWM strategy, ADC sampling, loop control, soft start, protection, state machine.
+5. Debug: measurement points, oscilloscope interpretation, common faults, safe bring-up.
+
+Do not treat a topology as complete only because the formula is known. Also do not require full product-level mastery before moving on; revisit deeper hardware and debug issues in later project phases.
 
 ## Teaching Style
 

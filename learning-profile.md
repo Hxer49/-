@@ -2,7 +2,8 @@
 
 ## Learner
 
-- Goal: Become proficient, then expert-level, in digital power software engineering over a multi-year learning path.
+- Goal: Become proficient, then expert-level, in power electronics and digital power full-stack engineering over a multi-year learning path.
+- Target depth: Master the major power topologies from both hardware and software perspectives, not only write control software.
 - Daily study time: Usually about 2 hours, but holiday/free-day study time can be longer or shorter.
 - Preferred workflow: Ask Codex for the next day's plan, study, then report notes/questions for the next plan.
 - Current date when profile started: 2026-06-28.
@@ -21,10 +22,13 @@
 - Digital power software engineer.
 - Power supply software engineer.
 - Senior power supply software engineer.
+- Power electronics hardware/software full-stack engineer.
+- Digital power control and topology design engineer.
 
 ## Main Skill Gaps
 
-- Power electronics topology knowledge: Buck, Boost, Buck-Boost, half bridge, full bridge, LLC, PFC, rectifier, inverter.
+- Power electronics topology knowledge and design: Buck, Boost, Buck-Boost, synchronous Buck/Boost, bidirectional DC/DC, flyback, forward, push-pull, half bridge, full bridge, phase-shift full bridge, LLC, PFC, rectifier, inverter.
+- Hardware design for each topology: device selection, magnetic components, capacitor selection, drive circuit, sampling circuit, protection circuit, thermal design, layout, efficiency, EMI awareness.
 - Digital power control: PWM/ADC timing, voltage loop, current loop, PI/PID, soft start, protection logic, loop stability.
 - TI C2000/DSP ecosystem: ePWM, ADC trigger, CMPSS, Trip Zone, CLA, HRPWM, CCS.
 - Simulation: PSIM, PLECS, MATLAB/Simulink.
@@ -36,13 +40,27 @@
 Expert-level does not mean only knowing theory. It means being able to:
 
 - Explain common power topologies, current paths, key waveforms, and control goals.
-- Build and tune closed-loop digital control for at least Buck and Boost converters.
-- Use simulation to validate topology behavior and control-loop response.
+- For each major topology, explain the operating modes, stress, key waveforms, failure modes, and practical design tradeoffs.
+- Design the hardware around each topology at a reasonable engineering level: switches, magnetics, capacitors, drivers, sensing, protection, thermal path, and PCB layout priorities.
+- Build and tune closed-loop digital control for representative DC/DC and DC/AC/AC/DC systems.
+- Use simulation to validate topology behavior, hardware sizing, and control-loop response.
 - Implement robust embedded software on STM32 and TI C2000/DSP.
 - Design product-like software architecture: state machine, faults, protection, parameters, communication, logging, calibration, upgrades.
 - Debug real hardware safely with power instruments.
 - Analyze unstable output, overshoot, protection trips, sampling noise, PWM timing problems, and hardware/software interaction problems.
 - Write clear project documentation and explain the work in interviews.
+
+## Topology Mastery Standard
+
+For every major topology, mastery means passing these gates:
+
+1. Principle gate: draw the topology, current paths, switching states, and key waveforms.
+2. Hardware gate: calculate or select main devices and explain voltage/current stress, losses, sensing, protection, thermal, and layout priorities.
+3. Simulation gate: build an open-loop and, when applicable, closed-loop simulation and explain the waveforms.
+4. Software/control gate: describe or implement PWM strategy, sampling strategy, control loop, soft start, protection, and state machine.
+5. Debug gate: know what to measure, expected oscilloscope waveforms, common abnormal waveforms, and likely causes.
+
+Important: Do not require full product-level depth before moving to the next topology. First reach engineering working depth, then revisit product-level details through projects and debugging cases.
 
 ## Daily Planning Rules
 

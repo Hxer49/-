@@ -27,6 +27,13 @@ What I still do not understand:
 Extra progress beyond the plan:
 1.
 
+Topology mastery evidence:
+1. Principle:
+2. Hardware:
+3. Simulation:
+4. Software/control:
+5. Debug:
+
 Questions for Codex:
 1.
 
