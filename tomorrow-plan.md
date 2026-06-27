@@ -1,35 +1,71 @@
-# Tomorrow Plan
+# Tomorrow's Detailed Content
 
 Date planned: 2026-06-29
-Study duration: 2 hours
+Study duration: 2 hours by default
 Topic: Buck converter basics, with hardware/software/analog support perspective
+Current gate: Buck principle gate, with analog entry support
 
-## Goal
+## Learning Objectives
 
-Understand what a Buck converter does, how current flows during MOS on/off states, why the ideal relationship is `Vout = D * Vin`, what the main hardware blocks are, and why basic analog circuits are needed for sensing.
+By the end of the session, the learner should be able to:
 
-## Schedule
+1. Explain what a Buck converter does.
+2. Draw or describe the current path when the MOS is on.
+3. Draw or describe the current path when the MOS is off.
+4. Use the ideal CCM formula `Vout = D * Vin`.
+5. Identify the main Buck hardware blocks.
+6. Explain why a controller needs analog front-end circuits such as a resistor divider and RC filter before ADC sampling.
 
-| Time | Task | Output |
-|---:|---|---|
-| 0-15 min | Understand Buck as a step-down DC/DC converter | One-sentence definition |
-| 15-40 min | Study MOS on-state and off-state current paths | Two current-path sketches |
-| 40-55 min | Learn ideal duty-cycle relation | Memorize `Vout = D * Vin` |
-| 55-75 min | Draw key waveforms | Inductor current, PWM, output voltage |
-| 75-95 min | Identify hardware blocks | MOS/diode or sync MOS/inductor/capacitor/driver/sampling |
-| 95-110 min | Analog entry: resistor divider and RC filter | Explain why ADC cannot directly sample high output voltage |
-| 110-115 min | Do duty-cycle exercises | Three calculated answers |
-| 115-120 min | Write daily log | Add entry to `daily-log.md` |
+## Pre-Study Review
 
-## Must-Know Points
+Review these ideas first:
 
-1. Buck is a step-down converter.
-2. During MOS on-time, input energy goes to the inductor, capacitor, and load.
-3. During MOS off-time, the inductor continues supplying the load through a diode or synchronous MOS path.
-4. In ideal continuous conduction mode, `Vout = D * Vin`.
-5. Inductor current is a ripple waveform, not a fixed DC line.
-6. Buck hardware is not only MOS + inductor; it also needs drive, sensing, protection, layout, and thermal thinking.
-7. A digital controller needs analog front-end circuits to scale, filter, and protect ADC inputs.
+1. Voltage is electrical potential difference.
+2. Current is charge flow.
+3. A capacitor voltage cannot change instantly.
+4. An inductor current cannot change instantly.
+5. A switch-mode power supply controls energy transfer by switching quickly.
+
+## New Knowledge
+
+Study these points:
+
+1. Buck is a step-down DC/DC converter.
+2. MOS on-state:
+   - Input supplies energy to the inductor, capacitor, and load.
+   - Inductor current rises.
+3. MOS off-state:
+   - Inductor keeps current flowing through diode or synchronous MOS path.
+   - Inductor current falls.
+4. Ideal continuous conduction mode relationship:
+   - `Vout = D * Vin`
+   - `D = Vout / Vin`
+5. Key waveforms:
+   - PWM gate signal.
+   - Switch node voltage.
+   - Inductor current ripple.
+   - Output voltage ripple.
+6. Main hardware blocks:
+   - MOSFET or switching device.
+   - Diode or synchronous MOS.
+   - Inductor.
+   - Output capacitor.
+   - Gate driver.
+   - Voltage/current sensing.
+   - Protection circuit.
+7. Analog support:
+   - The MCU ADC cannot directly sample high output voltage.
+   - A resistor divider scales voltage down.
+   - An RC filter reduces switching noise before ADC sampling.
+
+## Hands-On Tasks
+
+1. Draw a Buck topology.
+2. Mark the MOS on-state current path.
+3. Mark the MOS off-state current path.
+4. Sketch PWM, switch node voltage, inductor current, and output voltage ripple.
+5. Draw a simple output-voltage sensing path: `Vout -> resistor divider -> RC filter -> ADC`.
+6. Solve the three duty-cycle exercises.
 
 ## Exercises
 
@@ -37,23 +73,45 @@ Understand what a Buck converter does, how current flows during MOS on/off state
 2. `Vin = 48V`, target `Vout = 12V`: calculate duty cycle.
 3. `Vin = 60V`, `D = 0.2`: calculate ideal output voltage.
 
-## Send Back To Codex
+## Submit Back To Codex
 
-After studying, send your notes and any artifact you created. Codex will evaluate whether the Buck principle gate is still `Learning` or can move toward `Working depth`.
+After studying, send:
 
-```text
-1. Buck function:
-2. Current path when MOS is on:
-3. Current path when MOS is off:
-4. Duty-cycle formula:
-5. Main hardware blocks:
-6. Why Buck voltage sensing needs a resistor divider/RC filter:
-7. Answers to the three exercises:
-8. Sketch/photo/simulation/code if available:
-9. Questions I still have:
-```
+1. Buck function.
+2. Current path when MOS is on.
+3. Current path when MOS is off.
+4. Duty-cycle formula and three exercise answers.
+5. Main hardware blocks.
+6. Why Buck voltage sensing needs a resistor divider and RC filter.
+7. Sketch/photo/simulation/code if available.
+8. Questions you still have.
 
-Assessment rule:
+## Assessment Questions
 
-- Do not mark yourself as passed.
-- Codex will review the evidence, ask follow-up questions if needed, then decide the current level.
+Codex will ask or check these:
+
+1. Why does Buck output voltage decrease when duty cycle decreases?
+2. When the MOS turns off, why does the load current not immediately become zero?
+3. In ideal CCM, if `Vin = 36V` and `D = 0.25`, what is `Vout`?
+4. Why can an MCU ADC usually not measure Buck output voltage directly?
+5. What problem does an RC filter before ADC help reduce?
+
+## Passing Criteria
+
+The Buck principle gate can move from `Not started` toward `Learning` or `Working depth` only if evidence shows:
+
+1. Current paths are mostly correct.
+2. Duty-cycle calculations are correct.
+3. Key waveforms are qualitatively correct.
+4. Main hardware blocks are identified.
+5. The analog sensing explanation is basically correct.
+
+The learner does not self-certify passing. Codex reviews evidence, asks follow-up questions if needed, then assigns the current level.
+
+## Codex Will Check
+
+1. Whether the current paths are physically valid.
+2. Whether the duty-cycle formula is applied correctly.
+3. Whether waveform sketches match Buck behavior.
+4. Whether hardware blocks are complete enough for this stage.
+5. Whether the resistor divider and RC filter explanation shows basic analog understanding.

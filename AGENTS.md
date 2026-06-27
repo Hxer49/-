@@ -23,6 +23,7 @@ Before creating a daily plan, reviewing progress, or answering questions about t
 4. `tomorrow-plan.md`
 5. `roadmap-24-months.md` when broader planning is needed
 6. `ASSESSMENT.md` when evaluating whether the learner has mastered a topic or topology gate
+7. `NEXT_DAY_CONTENT.md` when the learner asks to prepare tomorrow's concrete learning and assessment content
 
 ## Daily Plan Rules
 
@@ -36,6 +37,21 @@ Before creating a daily plan, reviewing progress, or answering questions about t
 - Use the learner's last log and confidence score to decide whether to continue, review, or advance.
 - Do not skip fundamentals too quickly.
 - Track progress by updating `tomorrow-plan.md` and, when appropriate, `progress-tracker.md`.
+
+## End-Of-Day Preparation Rule
+
+When the learner says "整理明天的具体内容" or similar, prepare concrete next-day content, not only a rough plan. Include:
+
+- learning objectives
+- pre-study review
+- new knowledge points
+- hands-on tasks
+- required submitted artifacts
+- assessment questions
+- passing criteria
+- what Codex will check
+
+Follow `NEXT_DAY_CONTENT.md`.
 
 ## Topology Mastery Rule
 
